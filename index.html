@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="score">
+            <div class="score-box">
+                You: <span id="player-score">0</span>
+            </div>
+            <div class="score-box">
+                Computer: <span id="computer-score">0</span>
+            </div>
+        </div>
+        <div class="moves">
+            <div id="player-move">Your move: -</div>
+            <div id="computer-move">Computer's move: -</div>
+        </div>
+        <div class="result" id="result">Choose your move!</div>
+        <div class="choices">
+            <button class="choice" onclick="play('rock')">✊ Rock</button>
+            <button class="choice" onclick="play('paper')">✋ Paper</button>
+            <button class="choice" onclick="play('scissors')">✌️ Scissors</button>
+        </div>
+        <button class="reset" onclick="resetGame()">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
